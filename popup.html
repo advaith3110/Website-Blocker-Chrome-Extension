@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Blocker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      width: 300px; /* Widen the popup */
+      background: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    #siteInput {
+      width: calc(100% - 90px); /* Adjust width of input box */
+      padding: 10px;
+      margin-right: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #blockedSitesList {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 10px;
+      overflow-y: auto;
+      max-height: 200px;
+    }
+    #quoteDisplay {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Website Blocker</h2>
+  <div>
+    <input type="text" id="siteInput" placeholder="Enter site to block (e.g., facebook.com)">
+    <button id="addSite">Add</button>
+  </div>
+  <h3>Blocked Sites</h3>
+  <div id="blockedSitesList">No sites blocked yet.</div>
+  <h3>Motivational Quotes</h3>
+  <button id="getQuote">Get a Quote</button>
+  <p id="quoteDisplay">Click the button above to get inspired!</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
